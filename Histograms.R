@@ -160,7 +160,7 @@ main1_color = '#f20675'
 main2_color = '#1ce3cd'
 
 #Create a personalized theme
-sandra_theme<-theme_bw() + theme(
+pers_theme<-theme_bw() + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank(),
   plot.title = element_text(size = 14, hjust = 0.2, color = decoration_color),
@@ -181,7 +181,7 @@ sandra_theme<-theme_bw() + theme(
 )
 
 #Now we set the new defined theme to the default option 
-theme_set(sandra_theme)
+theme_set(pers_theme)
 
 #Simple chart
 ggplot(diamonds, aes(carat)) + 
